@@ -15,8 +15,17 @@ class Person {
         rect.checkCondition(rect.length.toString(),rect.height.toString())
     }
 }
+fun loopData(data:Number){
+var i = 0
+    while(i<12) {
 
-fun whenActions (number: Number){
+        if(i===data)
+            println("You gonna be married")
+
+        i++
+    }
+}
+fun whenActions (number: Number):Unit{
    val str:String = when(number){
         1 -> "x is 1"
         2 -> "x is 2"
@@ -24,7 +33,9 @@ fun whenActions (number: Number){
         else -> {
             "x is Outer Value"
         }
+
     }
+ loopData(number)
     println(str)
 }
 fun main(Args: Array<String>) {
