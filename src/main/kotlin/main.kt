@@ -16,14 +16,22 @@ class Person {
     }
 }
 fun loopData(data:Number){
+    val xH = 12
 var i = 0
-    while(i<12) {
+    while(i<xH) {
 
         if(i===data)
             println("You gonna be married")
 
         i++
     }
+    val result : Int = xH-i
+   val d =   mulptiple(result,xH/2)
+    println("this is what you've got ${d}")
+
+}
+fun mulptiple (a:Int,b:Int): Int {
+    return a + b
 }
 fun whenActions (number: Number):Unit{
    val str:String = when(number){
@@ -59,4 +67,5 @@ class Rectangle{
              println (false)
          }
      }
+
 }
